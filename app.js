@@ -77,3 +77,18 @@ function reverseArray(arr){
 const array3 = [0,1,2,3]
 const newArray = reverseArray(array)
 console.log(newArray)
+
+
+function array(arr){
+    let sum=0;
+
+    for (let i = 0; i < arr.length; i++){
+        sum = sum +arr[i]
+    }
+
+    return sum;
+}
+
+const numbers=[5,10,15,20]
+const sum = array(numbers)
+console.log(`The sum of all the numbers in the array is : ${sum}`)
