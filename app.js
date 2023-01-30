@@ -33,3 +33,23 @@ function removeSpaces(array){
 
 let array = 'hello My crazy world'
 console.log(removeSpaces(array))
+
+
+//////find shortests strings//////
+
+function findShortestString(arr){
+    let shorteststring = [arr[0]];
+    let shortestLength = arr[0].length;
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i].length < shortestLength ){
+            shorteststring = [arr[i]];
+            shortestLength = arr[i].length
+        }else if(arr[i].length === shortestLength){
+            shorteststring.push(arr[i])
+        }
+    }return shorteststring;
+}
+
+
+const array2 = ['levani','anuki','qeti','guga']
+console.log(findShortestString(array2))
