@@ -19,3 +19,17 @@ function simpleCalculator (){
 
 const result = simpleCalculator()
 console.log(`the result of mathematical operation you choose is : ${result}`)
+
+
+function removeSpaces(array){
+    let newarray =""
+    for (let i = 0; i < array.length; i++) {
+        if(array[i] !== " "){
+            newarray += array[i]
+        }
+    }return newarray
+
+}
+
+let array = 'hello My crazy world'
+console.log(removeSpaces(array))
