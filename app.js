@@ -53,3 +53,27 @@ function findShortestString(arr){
 
 const array2 = ['levani','anuki','qeti','guga']
 console.log(findShortestString(array2))
+
+
+// fourth exercise//
+
+function reverseArray(arr){
+    return arr.reverse();
+}
+
+let array1 = [1,2,3]
+console.log(reverseArray(array))
+
+
+// fourth exercise (2) //
+
+function reverseArray(arr){
+    let arr2=[];
+    for (let i = 0; i < arr.length; i++) {
+        arr2.unshift(arr[i]);
+    }return arr2;
+}
+
+const array3 = [0,1,2,3]
+const newArray = reverseArray(array)
+console.log(newArray)
